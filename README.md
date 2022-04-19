@@ -105,8 +105,6 @@ Flows are used to define topics and the associated conversational paths. Every a
 
 This single flow may be all you need for a simple agent. More complicated agents may require additional flows, and different development team members can be responsible for building and maintaining these flows.
 
-![4c80c8015274329c.png](README.assets/d7XD2Pwy%252F8vwGLM47ZtSJeQM75y8i%252BzSpU2SjYIhUus%253D.png)
-
 Every flow starts with a Page, and is made of one or multiple different pages thereafter to handle the conversation within a particular flow. The current page an end-user is on is considered the "active page". Each page can be configured to collect any required information from the end-user.
 
 ### Step 3 . Build from your Default Start Flow
