@@ -14,7 +14,7 @@ The first step to do is enter to your Google Cloud Console and sign in with you 
 
 and click on **Console**
 
-![](./assets/images/posts/README/1.jpg)
+![](./README.assets/1.jpg)
 
 
 
@@ -105,7 +105,7 @@ Flows are used to define topics and the associated conversational paths. Every a
 
 This single flow may be all you need for a simple agent. More complicated agents may require additional flows, and different development team members can be responsible for building and maintaining these flows.
 
-![4c80c8015274329c.png](assets/images/posts/README/d7XD2Pwy%252F8vwGLM47ZtSJeQM75y8i%252BzSpU2SjYIhUus%253D.png)
+![4c80c8015274329c.png](README.assets/d7XD2Pwy%252F8vwGLM47ZtSJeQM75y8i%252BzSpU2SjYIhUus%253D.png)
 
 Every flow starts with a Page, and is made of one or multiple different pages thereafter to handle the conversation within a particular flow. The current page an end-user is on is considered the "active page". Each page can be configured to collect any required information from the end-user.
 
@@ -130,19 +130,19 @@ The page your agent starts from is called the *Default Start Flow.* Pages store 
 
    
 
-   ![](assets/images/posts/README/14.jpg)
+   ![](README.assets/14.jpg)
 
    
 
 2. Scroll down to **Transition**. Choose **+ new Page** from the drop-down. Name the page "Ticket information" and click **Save**.
 
-![](assets/images/posts/README/15.jpg)
+![](README.assets/15.jpg)
 
 
 
 1. Exit out of the windows to return to the main display of flows to see your new `Ticket information` page connected to the **Start** page.
 
-![](assets/images/posts/README/16.jpg)
+![](README.assets/16.jpg)
 
 
 
@@ -160,7 +160,7 @@ Next you will use an entity to extract a required parameter from the end-user.
 
 1. Click on the page **Ticket Information**, then the **+** by **Parameters** to collect flight data.
 
-   ![](assets/images/posts/README/17.jpg)
+   ![](README.assets/17.jpg)
 
 2. Enter `departure_city` in the **Display name** field.
 
@@ -172,7 +172,7 @@ Next you will use an entity to extract a required parameter from the end-user.
 
 
 
-![](assets/images/posts/README/18.jpg)
+![](README.assets/18.jpg)
 
 1. Exit out of this window to make another parameter.
 2. Click the **+** by **Parameters** again to create 4 additional parameters one by one with the following name, entity type, and how the agent will prompt the end-user.
@@ -186,7 +186,7 @@ Next you will use an entity to extract a required parameter from the end-user.
 
 When finished they are listed like this:
 
-![](assets/images/posts/README/19.jpg)
+![](README.assets/19.jpg)
 
 **Note**: The *order* in which the parameters are listed affects the order in which the flight booking agent will ask for each. You can easily change the order by dragging parameters up or down.
 
@@ -202,7 +202,7 @@ Once the agent has collected the necessary 5 flight booking parameters, you want
 
 2. Scroll down to locate **Routes** and click the **+** sign next to it.
 
-   ![](assets/images/posts/README/20.jpg)
+   ![](README.assets/20.jpg)
 
 3. Scroll down to **Condition** > **Condition rules** > select "Match **AT LEAST ONE** rule (OR)"
 
@@ -214,7 +214,7 @@ Once the agent has collected the necessary 5 flight booking parameters, you want
 
 7. Click **Save**.
 
-![](assets/images/posts/README/21.jpg)
+![](README.assets/21.jpg)
 
 
 
@@ -228,7 +228,7 @@ Now add a response to say to the end-user when all 5 of their booking parameters
 
 (Now stay on this page while you read on to the next step of confirming information.)
 
-![](assets/images/posts/README/22.jpg)
+![](README.assets/22.jpg)
 
 ## Step 7. Confirming Information
 
@@ -238,13 +238,13 @@ After offering a response (or *fulfillment*), you need to create a transition to
 2. On the **Page field**, select the drop down to choose **+ new Page**.
 3. Type `Confirm trip` in the field called **Page name**.
 
-![](assets/images/posts/README/23.jpg)
+![](README.assets/23.jpg)
 
 1. Click **Save**.
 2. Exit out of the window.
 3. Take a look at the flow of your 3 pages.
 
-![](assets/images/posts/README/24.jpg)
+![](README.assets/24.jpg)
 
 ### Step 8. Repeating back the parameters collected from end-users
 
@@ -261,7 +261,7 @@ So referencing the departure city would look like: $session.params.departure_cit
 
 1. Starting from the Build view, click on the **Confirm Trip** page > **Entry fulfillment** > **Edit fulfillment** field.
 
-![](assets/images/posts/README/25.jpg)
+![](README.assets/25.jpg)
 
 1. Since you used 5 parameters, you can repeat them back to the user via the following session parameters.
 
@@ -282,32 +282,32 @@ content_copy
 
 
 
-![](assets/images/posts/README/26.jpg)
+![](README.assets/26.jpg)
 
 1. Then click **Save.**
 2. This is what it will look like to the end-user when the virtual agent repeats back the collected session parameters:
 
-![bd8f373cb661537.png](assets/images/posts/README/ws%252FUXP9uoxUf3i9%252F8pUH7%252BFuMW4W2rhyQsvuR%252B435T4%253D.png)
+![bd8f373cb661537.png](README.assets/ws%252FUXP9uoxUf3i9%252F8pUH7%252BFuMW4W2rhyQsvuR%252B435T4%253D.png)
 
 ### Step 9. Positive Confirmation Route
 
 1. Exit out of the window to return to your **Confirm Trip** page. Click **+** next to **Routes.**
 
-![](assets/images/posts/README/27.jpg)
+![](README.assets/27.jpg)
 
 1. Click the *Intents drop-down* , then click **+ new Intent.**
 
-![](assets/images/posts/README/28.jpg)
+![](README.assets/28.jpg)
 
 1. In Display name type `confirmation.yes`.
 2. In Training phrases enter `yes` then **Enter** (you can add more phrases like `correct`, `yup`, etc., to improve the NLU matching for this intent).
 
-![](assets/images/posts/README/29.jpg)
+![](README.assets/29.jpg)
 
 1. Click **Save**.
 2. After saving, scroll down to the **Fulfillment** section and enter `Great, your flight is booked!`
 
-![](assets/images/posts/README/30b.jpg)
+![](README.assets/30b.jpg)
 
 1. Then click **Save.**
 2. Click the back arrow, next to **Route**.
@@ -320,25 +320,25 @@ Now add logic to route an end-user to recollect their flight parameters if they 
 
 1. Still on the Routes section select **Add route**.
 
-![](assets/images/posts/README/31.jpg)
+![](README.assets/31.jpg)
 
 1. From the Intents drop-down choose **+ new Intent**.
 2. Name the intent `confirmation.no` in the Display name field.
 3. Scroll down to the Training phrases section type "**no**" then click **Enter.**
 
-![](assets/images/posts/README/32.jpg)
+![](README.assets/32.jpg)
 
 Click **Save.**
 
 1. Next, scroll down to the section called **Transition** > **Page**, then choose **Ticket information** from the drop-down.
 
-![](assets/images/posts/README/33.jpg)
+![](README.assets/33.jpg)
 
 **Note**: This is to prompt the user again for their flight information.
 
 1. Scroll up to **Parameter presets** and click **Add a parameter** . 
 
-   ![](assets/images/posts/README/34.jpg)
+   ![](README.assets/34.jpg)
 
 1. Enter the following *5* values and assign their value to **null** *without* the quotation marks. **Note**: you will need to delete the quotation marks in the value column and type *null.* This is to delete the parameters collected from the end-user.
 
@@ -350,20 +350,20 @@ Click **Save.**
 | `return_date`      | null      |
 | `passenger_name`   | null      |
 
-![](assets/images/posts/README/35.jpg)
+![](README.assets/35.jpg)
 
 The purpose of this is to remove the value that was previously collected from the end user to allow them to submit a new value. If this step is missed, it might result in an infinite loop scenario in your bot!
 
 1. Click **Save.**
 2. Exit out of the window to return to the Build view, you will now see how all 3 pages flow. Note that the last page has two arrows between the Confirm trip and Ticket information page because the `confirmation.no` intent is linked back.
 
-![](assets/images/posts/README/36.jpg)
+![](README.assets/36.jpg)
 
 ## Step 11. Testing
 
 To test that your agent works as intended, click on **Test Agent** in the upper right corner of the screen. Interact with the agent as if you were the end-user. As you move through the main flow, notice the pages, intents, and transitions you created.
 
-![](assets/images/posts/README/37.jpg)
+![](README.assets/37.jpg)
 
 Depending on how you arranged your parameter collection, you can try typing in the following sample dialogue:
 
@@ -379,7 +379,7 @@ This should result in a successful transaction through your agent, commonly know
 
 Here is an example of the above agent testing in the Test Agent console:
 
-![](assets/images/posts/README/38.jpg)
+![](README.assets/38.jpg)
 
 
 
@@ -391,17 +391,17 @@ When you build an agent for one project, you can export it to use in a different
 
 1. In the **Agent** drop down at the top of the Dialogflow CX console, click **View all agents**.
 
-![](assets/images/posts/README/39.jpg)
+![](README.assets/39.jpg)
 
-![4d1ccf6da1473c7d.png](assets/images/posts/README/UGdtXF8vOtRq5x%252BwsNIJSLP3er4ltgv2c8tmtbsLQqw%253D.png)
+![4d1ccf6da1473c7d.png](README.assets/UGdtXF8vOtRq5x%252BwsNIJSLP3er4ltgv2c8tmtbsLQqw%253D.png)
 
 1. On the Agent list screen, click the context menu next to your agent and then click **Export**.
 
-![](assets/images/posts/README/40.jpg)
+![](README.assets/40.jpg)
 
 1. On the Export Agent screen, choose **Download** to local file, then click **Export**.
 
-![](assets/images/posts/README/41.jpg)
+![](README.assets/41.jpg)
 
 ## Congratulations
 
