@@ -401,6 +401,8 @@ When you build an agent for one project, you can export it to use in a different
 
 ![](README.assets/41.jpg)
 
+You can download this exported file [here,](https://github.com/ruslanmv/ChatBot-with-Dialogflox-CX-in-Google-Cloud/blob/master/exported_agent_Flight%20booker.blob?raw=true) and load it this work.
+
 ## Congratulations
 
 You have built a Dialogflow CX Agent and learned some basic concepts.
