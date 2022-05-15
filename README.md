@@ -3,7 +3,6 @@
 Today in this blogpost I will show you how you can create a simple chatbot in the Google Cloud Platform by using **Dialogflow CX**
 
 **Dialogflow CX** provides a simple, visual bot building approach to virtual agent design. Bot designers now have a much clearer picture of the overall bot building process and multiple designers are able to easily collaborate on the same agent build
-
 ## Step 1 Create your agent
 
 An **agent** is a virtual agent that handles concurrent conversations with your end-users. It is a natural language understanding module that understands the nuances of human language. Dialogflow translates end-user text or audio during a conversation to structured data that your apps and services can understand. 
@@ -15,8 +14,6 @@ The first step to do is enter to your Google Cloud Console and sign in with you 
 and click on **Console**
 
 ![](./README.assets/1.jpg)
-
-
 
 You can view the menu with a list of Google Cloud Products and Services by clicking the **Navigation menu** at the top-left, create **New project**
 
